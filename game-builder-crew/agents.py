@@ -12,7 +12,8 @@ class GameAgents():
 				Your expertise in programming in python. and do your best to
 				produce perfect code"""),
 			allow_delegation=False,
-			verbose=True
+			verbose=True,
+			llm='ollama/codellama:7b-code'
 		)
 
 	def qa_engineer_agent(self):
@@ -27,7 +28,8 @@ class GameAgents():
 				brackets and syntax errors.
   				You also check for security vulnerabilities, and logic errors"""),
 			allow_delegation=False,
-			verbose=True
+			verbose=True,
+			llm='ollama/codellama:7b-code'
 		)
 
 	def chief_qa_engineer_agent(self):
@@ -38,5 +40,6 @@ class GameAgents():
 				You feel that programmers always do only half the job, so you are
 				super dedicate to make high quality code."""),
 			allow_delegation=True,
-			verbose=True
+			verbose=True,
+			llm='ollama/codellama:7b-code'
 		)
